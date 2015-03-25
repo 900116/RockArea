@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ECD0954B1AC25CBE003F3180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954A1AC25CBE003F3180 /* main.m */; };
+		ECD0954E1AC25CBE003F3180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954D1AC25CBE003F3180 /* AppDelegate.m */; };
+		ECD095511AC25CBE003F3180 /* RockArea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954F1AC25CBE003F3180 /* RockArea.xcdatamodeld */; };
+		ECD095541AC25CBE003F3180 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095531AC25CBE003F3180 /* ViewController.m */; };
+		ECD095571AC25CBE003F3180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD095551AC25CBE003F3180 /* Main.storyboard */; };
+		ECD095591AC25CBE003F3180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD095581AC25CBE003F3180 /* Images.xcassets */; };
+		ECD0955C1AC25CBE003F3180 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD0955A1AC25CBE003F3180 /* LaunchScreen.xib */; };
+		ECD095681AC25CBE003F3180 /* RockAreaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095671AC25CBE003F3180 /* RockAreaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECD095621AC25CBE003F3180 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECD0953D1AC25CBE003F3180 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECD095441AC25CBE003F3180;
+			remoteInfo = RockArea;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ECD095451AC25CBE003F3180 /* RockArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD095491AC25CBE003F3180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD0954A1AC25CBE003F3180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ECD0954C1AC25CBE003F3180 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ECD0954D1AC25CBE003F3180 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ECD095501AC25CBE003F3180 /* RockArea.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RockArea.xcdatamodel; sourceTree = "<group>"; };
+		ECD095521AC25CBE003F3180 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ECD095531AC25CBE003F3180 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ECD095561AC25CBE003F3180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ECD095581AC25CBE003F3180 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ECD0955B1AC25CBE003F3180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		ECD095611AC25CBE003F3180 /* RockAreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockAreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECD095661AC25CBE003F3180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECD095671AC25CBE003F3180 /* RockAreaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockAreaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECD095421AC25CBE003F3180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD0955E1AC25CBE003F3180 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ECD0953C1AC25CBE003F3180 = {
+			isa = PBXGroup;
+			children = (
+				ECD095471AC25CBE003F3180 /* RockArea */,
+				ECD095641AC25CBE003F3180 /* RockAreaTests */,
+				ECD095461AC25CBE003F3180 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ECD095461AC25CBE003F3180 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095451AC25CBE003F3180 /* RockArea.app */,
+				ECD095611AC25CBE003F3180 /* RockAreaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECD095471AC25CBE003F3180 /* RockArea */ = {
+			isa = PBXGroup;
+			children = (
+				ECD0954C1AC25CBE003F3180 /* AppDelegate.h */,
+				ECD0954D1AC25CBE003F3180 /* AppDelegate.m */,
+				ECD095521AC25CBE003F3180 /* ViewController.h */,
+				ECD095531AC25CBE003F3180 /* ViewController.m */,
+				ECD095551AC25CBE003F3180 /* Main.storyboard */,
+				ECD095581AC25CBE003F3180 /* Images.xcassets */,
+				ECD0955A1AC25CBE003F3180 /* LaunchScreen.xib */,
+				ECD0954F1AC25CBE003F3180 /* RockArea.xcdatamodeld */,
+				ECD095481AC25CBE003F3180 /* Supporting Files */,
+			);
+			path = RockArea;
+			sourceTree = "<group>";
+		};
+		ECD095481AC25CBE003F3180 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095491AC25CBE003F3180 /* Info.plist */,
+				ECD0954A1AC25CBE003F3180 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ECD095641AC25CBE003F3180 /* RockAreaTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095671AC25CBE003F3180 /* RockAreaTests.m */,
+				ECD095651AC25CBE003F3180 /* Supporting Files */,
+			);
+			path = RockAreaTests;
+			sourceTree = "<group>";
+		};
+		ECD095651AC25CBE003F3180 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095661AC25CBE003F3180 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECD095441AC25CBE003F3180 /* RockArea */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD0956B1AC25CBE003F3180 /* Build configuration list for PBXNativeTarget "RockArea" */;
+			buildPhases = (
+				ECD095411AC25CBE003F3180 /* Sources */,
+				ECD095421AC25CBE003F3180 /* Frameworks */,
+				ECD095431AC25CBE003F3180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RockArea;
+			productName = RockArea;
+			productReference = ECD095451AC25CBE003F3180 /* RockArea.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECD095601AC25CBE003F3180 /* RockAreaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECD0956E1AC25CBE003F3180 /* Build configuration list for PBXNativeTarget "RockAreaTests" */;
+			buildPhases = (
+				ECD0955D1AC25CBE003F3180 /* Sources */,
+				ECD0955E1AC25CBE003F3180 /* Frameworks */,
+				ECD0955F1AC25CBE003F3180 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECD095631AC25CBE003F3180 /* PBXTargetDependency */,
+			);
+			name = RockAreaTests;
+			productName = RockAreaTests;
+			productReference = ECD095611AC25CBE003F3180 /* RockAreaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECD0953D1AC25CBE003F3180 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = YongCheHui;
+				TargetAttributes = {
+					ECD095441AC25CBE003F3180 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					ECD095601AC25CBE003F3180 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = ECD095441AC25CBE003F3180;
+					};
+				};
+			};
+			buildConfigurationList = ECD095401AC25CBE003F3180 /* Build configuration list for PBXProject "RockArea" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECD0953C1AC25CBE003F3180;
+			productRefGroup = ECD095461AC25CBE003F3180 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECD095441AC25CBE003F3180 /* RockArea */,
+				ECD095601AC25CBE003F3180 /* RockAreaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECD095431AC25CBE003F3180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD095571AC25CBE003F3180 /* Main.storyboard in Resources */,
+				ECD0955C1AC25CBE003F3180 /* LaunchScreen.xib in Resources */,
+				ECD095591AC25CBE003F3180 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD0955F1AC25CBE003F3180 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECD095411AC25CBE003F3180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD0954E1AC25CBE003F3180 /* AppDelegate.m in Sources */,
+				ECD0954B1AC25CBE003F3180 /* main.m in Sources */,
+				ECD095541AC25CBE003F3180 /* ViewController.m in Sources */,
+				ECD095511AC25CBE003F3180 /* RockArea.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD0955D1AC25CBE003F3180 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD095681AC25CBE003F3180 /* RockAreaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECD095631AC25CBE003F3180 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECD095441AC25CBE003F3180 /* RockArea */;
+			targetProxy = ECD095621AC25CBE003F3180 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECD095551AC25CBE003F3180 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD095561AC25CBE003F3180 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ECD0955A1AC25CBE003F3180 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECD0955B1AC25CBE003F3180 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECD095691AC25CBE003F3180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECD0956A1AC25CBE003F3180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECD0956C1AC25CBE003F3180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RockArea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ECD0956D1AC25CBE003F3180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RockArea/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ECD0956F1AC25CBE003F3180 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RockAreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockArea.app/RockArea";
+			};
+			name = Debug;
+		};
+		ECD095701AC25CBE003F3180 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RockAreaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockArea.app/RockArea";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECD095401AC25CBE003F3180 /* Build configuration list for PBXProject "RockArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD095691AC25CBE003F3180 /* Debug */,
+				ECD0956A1AC25CBE003F3180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECD0956B1AC25CBE003F3180 /* Build configuration list for PBXNativeTarget "RockArea" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD0956C1AC25CBE003F3180 /* Debug */,
+				ECD0956D1AC25CBE003F3180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ECD0956E1AC25CBE003F3180 /* Build configuration list for PBXNativeTarget "RockAreaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECD0956F1AC25CBE003F3180 /* Debug */,
+				ECD095701AC25CBE003F3180 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ECD0954F1AC25CBE003F3180 /* RockArea.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ECD095501AC25CBE003F3180 /* RockArea.xcdatamodel */,
+			);
+			currentVersion = ECD095501AC25CBE003F3180 /* RockArea.xcdatamodel */;
+			path = RockArea.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ECD0953D1AC25CBE003F3180 /* Project object */;
+}
