@@ -7,14 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BD4FB351AC4662800F01C8E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2BD4FB341AC4662800F01C8E /* Podfile */; };
+		9A2AEB77881F74EA8DDB0B6C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE33B93B89039F043A1B461 /* libPods.a */; };
 		ECD0954B1AC25CBE003F3180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954A1AC25CBE003F3180 /* main.m */; };
 		ECD0954E1AC25CBE003F3180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954D1AC25CBE003F3180 /* AppDelegate.m */; };
 		ECD095511AC25CBE003F3180 /* RockArea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954F1AC25CBE003F3180 /* RockArea.xcdatamodeld */; };
-		ECD095541AC25CBE003F3180 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095531AC25CBE003F3180 /* ViewController.m */; };
 		ECD095571AC25CBE003F3180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECD095551AC25CBE003F3180 /* Main.storyboard */; };
 		ECD095591AC25CBE003F3180 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECD095581AC25CBE003F3180 /* Images.xcassets */; };
 		ECD0955C1AC25CBE003F3180 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECD0955A1AC25CBE003F3180 /* LaunchScreen.xib */; };
 		ECD095681AC25CBE003F3180 /* RockAreaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095671AC25CBE003F3180 /* RockAreaTests.m */; };
+		ECD095781AC26E9F003F3180 /* RAMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095771AC26E9F003F3180 /* RAMyViewController.m */; };
+		ECD0957B1AC26EAE003F3180 /* RASearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0957A1AC26EAE003F3180 /* RASearchViewController.m */; };
+		ECD0957E1AC26EBF003F3180 /* RAListenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0957D1AC26EBF003F3180 /* RAListenViewController.m */; };
+		ECD095811AC26EC9003F3180 /* RASeeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095801AC26EC9003F3180 /* RASeeViewController.m */; };
+		ECD0958A1AC2A174003F3180 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095891AC2A174003F3180 /* BmobSDK.framework */; };
+		ECD0958D1AC2A1AF003F3180 /* RADataConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0958C1AC2A1AF003F3180 /* RADataConfig.m */; };
+		ECD095A61AC2A2F0003F3180 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0959A1AC2A2A1003F3180 /* SystemConfiguration.framework */; };
+		ECD095A71AC2A2F3003F3180 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095A41AC2A2C9003F3180 /* MediaPlayer.framework */; };
+		ECD095A81AC2A2F5003F3180 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095A21AC2A2C3003F3180 /* AVFoundation.framework */; };
+		ECD095A91AC2A2F8003F3180 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095A01AC2A2BD003F3180 /* libsqlite3.dylib */; };
+		ECD095AA1AC2A2FA003F3180 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0959E1AC2A2B6003F3180 /* libicucore.dylib */; };
+		ECD095AB1AC2A2FC003F3180 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0959C1AC2A2A8003F3180 /* libz.1.2.5.dylib */; };
+		ECD095AC1AC2A302003F3180 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095981AC2A296003F3180 /* CoreTelephony.framework */; };
+		ECD095AD1AC2A304003F3180 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095961AC2A290003F3180 /* CFNetwork.framework */; };
+		ECD095AE1AC2A309003F3180 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095941AC2A289003F3180 /* MobileCoreServices.framework */; };
+		ECD095AF1AC2A30D003F3180 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095921AC2A280003F3180 /* CoreGraphics.framework */; };
+		ECD095B01AC2A30F003F3180 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD095901AC2A279003F3180 /* Security.framework */; };
+		ECD095B11AC2A312003F3180 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD0958E1AC2A271003F3180 /* CoreLocation.framework */; };
+		ECD095B61AC2A6BF003F3180 /* RAUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095B51AC2A6BF003F3180 /* RAUserManager.m */; };
+		ECD095BC1AC2B799003F3180 /* RABaseDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095BB1AC2B799003F3180 /* RABaseDataObject.m */; };
+		ECD095BF1AC2C33A003F3180 /* RAError.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095BE1AC2C33A003F3180 /* RAError.m */; };
+		ECD095C21AC2C563003F3180 /* BmobUser+RAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD095C11AC2C563003F3180 /* BmobUser+RAUser.m */; };
+		ECD1CBFB1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CBFA1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m */; };
+		ECD1CC001AC3CBE300B6CCD6 /* SystemConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CBFF1AC3CBE300B6CCD6 /* SystemConfig.m */; };
+		ECD1CC071AC416F800B6CCD6 /* RALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC061AC416F800B6CCD6 /* RALoginViewController.m */; };
+		ECD1CC0B1AC4193500B6CCD6 /* UIViewController+Extense.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC0A1AC4193500B6CCD6 /* UIViewController+Extense.m */; };
+		ECD1CC101AC41CA500B6CCD6 /* RARegexTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC0F1AC41CA500B6CCD6 /* RARegexTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +56,64 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BD4FB341AC4662800F01C8E /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4FE33B93B89039F043A1B461 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		585C36E3E32123588F64B0C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DA00D997D4E234E4D5C0B19C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		ECD095451AC25CBE003F3180 /* RockArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD095491AC25CBE003F3180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD0954A1AC25CBE003F3180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ECD0954C1AC25CBE003F3180 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ECD0954D1AC25CBE003F3180 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ECD095501AC25CBE003F3180 /* RockArea.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RockArea.xcdatamodel; sourceTree = "<group>"; };
-		ECD095521AC25CBE003F3180 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ECD095531AC25CBE003F3180 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ECD095561AC25CBE003F3180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ECD095581AC25CBE003F3180 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ECD0955B1AC25CBE003F3180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		ECD095611AC25CBE003F3180 /* RockAreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockAreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD095661AC25CBE003F3180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD095671AC25CBE003F3180 /* RockAreaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RockAreaTests.m; sourceTree = "<group>"; };
+		ECD095761AC26E9F003F3180 /* RAMyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAMyViewController.h; sourceTree = "<group>"; };
+		ECD095771AC26E9F003F3180 /* RAMyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAMyViewController.m; sourceTree = "<group>"; };
+		ECD095791AC26EAE003F3180 /* RASearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASearchViewController.h; sourceTree = "<group>"; };
+		ECD0957A1AC26EAE003F3180 /* RASearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RASearchViewController.m; sourceTree = "<group>"; };
+		ECD0957C1AC26EBF003F3180 /* RAListenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAListenViewController.h; sourceTree = "<group>"; };
+		ECD0957D1AC26EBF003F3180 /* RAListenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAListenViewController.m; sourceTree = "<group>"; };
+		ECD0957F1AC26EC9003F3180 /* RASeeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RASeeViewController.h; sourceTree = "<group>"; };
+		ECD095801AC26EC9003F3180 /* RASeeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RASeeViewController.m; sourceTree = "<group>"; };
+		ECD095891AC2A174003F3180 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		ECD0958B1AC2A1AF003F3180 /* RADataConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADataConfig.h; sourceTree = "<group>"; };
+		ECD0958C1AC2A1AF003F3180 /* RADataConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADataConfig.m; sourceTree = "<group>"; };
+		ECD0958E1AC2A271003F3180 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ECD095901AC2A279003F3180 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ECD095921AC2A280003F3180 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECD095941AC2A289003F3180 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		ECD095961AC2A290003F3180 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		ECD095981AC2A296003F3180 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		ECD0959A1AC2A2A1003F3180 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ECD0959C1AC2A2A8003F3180 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		ECD0959E1AC2A2B6003F3180 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		ECD095A01AC2A2BD003F3180 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		ECD095A21AC2A2C3003F3180 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		ECD095A41AC2A2C9003F3180 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		ECD095B21AC2A4C2003F3180 /* AppConfig.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.pch; sourceTree = "<group>"; };
+		ECD095B41AC2A6BF003F3180 /* RAUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAUserManager.h; sourceTree = "<group>"; };
+		ECD095B51AC2A6BF003F3180 /* RAUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAUserManager.m; sourceTree = "<group>"; };
+		ECD095BA1AC2B799003F3180 /* RABaseDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseDataObject.h; sourceTree = "<group>"; };
+		ECD095BB1AC2B799003F3180 /* RABaseDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseDataObject.m; sourceTree = "<group>"; };
+		ECD095BD1AC2C33A003F3180 /* RAError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAError.h; sourceTree = "<group>"; };
+		ECD095BE1AC2C33A003F3180 /* RAError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAError.m; sourceTree = "<group>"; };
+		ECD095C01AC2C563003F3180 /* BmobUser+RAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BmobUser+RAUser.h"; sourceTree = "<group>"; };
+		ECD095C11AC2C563003F3180 /* BmobUser+RAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BmobUser+RAUser.m"; sourceTree = "<group>"; };
+		ECD1CBF91AC3A3EA00B6CCD6 /* BmobObject+BaseType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BmobObject+BaseType.h"; sourceTree = "<group>"; };
+		ECD1CBFA1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BmobObject+BaseType.m"; sourceTree = "<group>"; };
+		ECD1CBFE1AC3CBE300B6CCD6 /* SystemConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemConfig.h; sourceTree = "<group>"; };
+		ECD1CBFF1AC3CBE300B6CCD6 /* SystemConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SystemConfig.m; sourceTree = "<group>"; };
+		ECD1CC051AC416F800B6CCD6 /* RALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginViewController.h; sourceTree = "<group>"; };
+		ECD1CC061AC416F800B6CCD6 /* RALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginViewController.m; sourceTree = "<group>"; };
+		ECD1CC091AC4193500B6CCD6 /* UIViewController+Extense.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extense.h"; sourceTree = "<group>"; };
+		ECD1CC0A1AC4193500B6CCD6 /* UIViewController+Extense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extense.m"; sourceTree = "<group>"; };
+		ECD1CC0E1AC41CA500B6CCD6 /* RARegexTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARegexTextField.h; sourceTree = "<group>"; };
+		ECD1CC0F1AC41CA500B6CCD6 /* RARegexTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARegexTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +121,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD095A91AC2A2F8003F3180 /* libsqlite3.dylib in Frameworks */,
+				ECD095AA1AC2A2FA003F3180 /* libicucore.dylib in Frameworks */,
+				ECD095AB1AC2A2FC003F3180 /* libz.1.2.5.dylib in Frameworks */,
+				ECD095AC1AC2A302003F3180 /* CoreTelephony.framework in Frameworks */,
+				ECD0958A1AC2A174003F3180 /* BmobSDK.framework in Frameworks */,
+				ECD095AD1AC2A304003F3180 /* CFNetwork.framework in Frameworks */,
+				ECD095AF1AC2A30D003F3180 /* CoreGraphics.framework in Frameworks */,
+				ECD095B01AC2A30F003F3180 /* Security.framework in Frameworks */,
+				ECD095B11AC2A312003F3180 /* CoreLocation.framework in Frameworks */,
+				ECD095AE1AC2A309003F3180 /* MobileCoreServices.framework in Frameworks */,
+				ECD095A81AC2A2F5003F3180 /* AVFoundation.framework in Frameworks */,
+				ECD095A61AC2A2F0003F3180 /* SystemConfiguration.framework in Frameworks */,
+				ECD095A71AC2A2F3003F3180 /* MediaPlayer.framework in Frameworks */,
+				9A2AEB77881F74EA8DDB0B6C /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +148,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EC3EA7C6FA205CEC82070D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FE33B93B89039F043A1B461 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		796000EFD85D01F01AE94EFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				585C36E3E32123588F64B0C9 /* Pods.debug.xcconfig */,
+				DA00D997D4E234E4D5C0B19C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ECD0953C1AC25CBE003F3180 = {
 			isa = PBXGroup;
 			children = (
+				2BD4FB341AC4662800F01C8E /* Podfile */,
 				ECD095471AC25CBE003F3180 /* RockArea */,
 				ECD095641AC25CBE003F3180 /* RockAreaTests */,
 				ECD095461AC25CBE003F3180 /* Products */,
+				796000EFD85D01F01AE94EFB /* Pods */,
+				4EC3EA7C6FA205CEC82070D3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,14 +189,15 @@
 		ECD095471AC25CBE003F3180 /* RockArea */ = {
 			isa = PBXGroup;
 			children = (
+				ECD095881AC2A16B003F3180 /* Lib */,
+				ECD095831AC29F62003F3180 /* Data */,
+				ECD095821AC26ED1003F3180 /* StoryBoard */,
+				ECD095711AC26E0E003F3180 /* Classes */,
 				ECD0954C1AC25CBE003F3180 /* AppDelegate.h */,
 				ECD0954D1AC25CBE003F3180 /* AppDelegate.m */,
-				ECD095521AC25CBE003F3180 /* ViewController.h */,
-				ECD095531AC25CBE003F3180 /* ViewController.m */,
-				ECD095551AC25CBE003F3180 /* Main.storyboard */,
 				ECD095581AC25CBE003F3180 /* Images.xcassets */,
-				ECD0955A1AC25CBE003F3180 /* LaunchScreen.xib */,
 				ECD0954F1AC25CBE003F3180 /* RockArea.xcdatamodeld */,
+				ECD095B21AC2A4C2003F3180 /* AppConfig.pch */,
 				ECD095481AC25CBE003F3180 /* Supporting Files */,
 			);
 			path = RockArea;
@@ -122,6 +229,165 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ECD095711AC26E0E003F3180 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CC0C1AC41C5F00B6CCD6 /* View */,
+				ECD1CC081AC4191B00B6CCD6 /* Extense */,
+				ECD1CBFD1AC3CBB900B6CCD6 /* SystemConfig */,
+				ECD1CBFC1AC3B78D00B6CCD6 /* Login */,
+				ECD095751AC26E49003F3180 /* My */,
+				ECD095741AC26E36003F3180 /* Search */,
+				ECD095731AC26E2B003F3180 /* Listen */,
+				ECD095721AC26E18003F3180 /* See */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		ECD095721AC26E18003F3180 /* See */ = {
+			isa = PBXGroup;
+			children = (
+				ECD0957F1AC26EC9003F3180 /* RASeeViewController.h */,
+				ECD095801AC26EC9003F3180 /* RASeeViewController.m */,
+			);
+			name = See;
+			sourceTree = "<group>";
+		};
+		ECD095731AC26E2B003F3180 /* Listen */ = {
+			isa = PBXGroup;
+			children = (
+				ECD0957C1AC26EBF003F3180 /* RAListenViewController.h */,
+				ECD0957D1AC26EBF003F3180 /* RAListenViewController.m */,
+			);
+			name = Listen;
+			sourceTree = "<group>";
+		};
+		ECD095741AC26E36003F3180 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095791AC26EAE003F3180 /* RASearchViewController.h */,
+				ECD0957A1AC26EAE003F3180 /* RASearchViewController.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		ECD095751AC26E49003F3180 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095761AC26E9F003F3180 /* RAMyViewController.h */,
+				ECD095771AC26E9F003F3180 /* RAMyViewController.m */,
+			);
+			name = My;
+			sourceTree = "<group>";
+		};
+		ECD095821AC26ED1003F3180 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				ECD0955A1AC25CBE003F3180 /* LaunchScreen.xib */,
+				ECD095551AC25CBE003F3180 /* Main.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		ECD095831AC29F62003F3180 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CC011AC40FB600B6CCD6 /* Life */,
+				ECD095B31AC2A6A2003F3180 /* UserManager */,
+				ECD0958B1AC2A1AF003F3180 /* RADataConfig.h */,
+				ECD0958C1AC2A1AF003F3180 /* RADataConfig.m */,
+				ECD095BA1AC2B799003F3180 /* RABaseDataObject.h */,
+				ECD095BB1AC2B799003F3180 /* RABaseDataObject.m */,
+				ECD095BD1AC2C33A003F3180 /* RAError.h */,
+				ECD095BE1AC2C33A003F3180 /* RAError.m */,
+				ECD1CBF91AC3A3EA00B6CCD6 /* BmobObject+BaseType.h */,
+				ECD1CBFA1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		ECD095881AC2A16B003F3180 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095A41AC2A2C9003F3180 /* MediaPlayer.framework */,
+				ECD095A21AC2A2C3003F3180 /* AVFoundation.framework */,
+				ECD095A01AC2A2BD003F3180 /* libsqlite3.dylib */,
+				ECD0959E1AC2A2B6003F3180 /* libicucore.dylib */,
+				ECD0959C1AC2A2A8003F3180 /* libz.1.2.5.dylib */,
+				ECD0959A1AC2A2A1003F3180 /* SystemConfiguration.framework */,
+				ECD095981AC2A296003F3180 /* CoreTelephony.framework */,
+				ECD095961AC2A290003F3180 /* CFNetwork.framework */,
+				ECD095941AC2A289003F3180 /* MobileCoreServices.framework */,
+				ECD095921AC2A280003F3180 /* CoreGraphics.framework */,
+				ECD095901AC2A279003F3180 /* Security.framework */,
+				ECD0958E1AC2A271003F3180 /* CoreLocation.framework */,
+				ECD095891AC2A174003F3180 /* BmobSDK.framework */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		ECD095B31AC2A6A2003F3180 /* UserManager */ = {
+			isa = PBXGroup;
+			children = (
+				ECD095B41AC2A6BF003F3180 /* RAUserManager.h */,
+				ECD095B51AC2A6BF003F3180 /* RAUserManager.m */,
+				ECD095C01AC2C563003F3180 /* BmobUser+RAUser.h */,
+				ECD095C11AC2C563003F3180 /* BmobUser+RAUser.m */,
+			);
+			name = UserManager;
+			sourceTree = "<group>";
+		};
+		ECD1CBFC1AC3B78D00B6CCD6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CC051AC416F800B6CCD6 /* RALoginViewController.h */,
+				ECD1CC061AC416F800B6CCD6 /* RALoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		ECD1CBFD1AC3CBB900B6CCD6 /* SystemConfig */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CBFE1AC3CBE300B6CCD6 /* SystemConfig.h */,
+				ECD1CBFF1AC3CBE300B6CCD6 /* SystemConfig.m */,
+			);
+			name = SystemConfig;
+			sourceTree = "<group>";
+		};
+		ECD1CC011AC40FB600B6CCD6 /* Life */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Life;
+			sourceTree = "<group>";
+		};
+		ECD1CC081AC4191B00B6CCD6 /* Extense */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CC091AC4193500B6CCD6 /* UIViewController+Extense.h */,
+				ECD1CC0A1AC4193500B6CCD6 /* UIViewController+Extense.m */,
+			);
+			name = Extense;
+			sourceTree = "<group>";
+		};
+		ECD1CC0C1AC41C5F00B6CCD6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CC0D1AC41C6B00B6CCD6 /* RARegexTextField */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ECD1CC0D1AC41C6B00B6CCD6 /* RARegexTextField */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CC0E1AC41CA500B6CCD6 /* RARegexTextField.h */,
+				ECD1CC0F1AC41CA500B6CCD6 /* RARegexTextField.m */,
+			);
+			name = RARegexTextField;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +395,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ECD0956B1AC25CBE003F3180 /* Build configuration list for PBXNativeTarget "RockArea" */;
 			buildPhases = (
+				37271D04EEB470B16078B93E /* Check Pods Manifest.lock */,
 				ECD095411AC25CBE003F3180 /* Sources */,
 				ECD095421AC25CBE003F3180 /* Frameworks */,
 				ECD095431AC25CBE003F3180 /* Resources */,
+				D76BFCF59829C5CE4F9534EE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,6 +472,7 @@
 			files = (
 				ECD095571AC25CBE003F3180 /* Main.storyboard in Resources */,
 				ECD0955C1AC25CBE003F3180 /* LaunchScreen.xib in Resources */,
+				2BD4FB351AC4662800F01C8E /* Podfile in Resources */,
 				ECD095591AC25CBE003F3180 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,15 +486,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37271D04EEB470B16078B93E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D76BFCF59829C5CE4F9534EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ECD095411AC25CBE003F3180 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD1CC071AC416F800B6CCD6 /* RALoginViewController.m in Sources */,
+				ECD1CBFB1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m in Sources */,
+				ECD0958D1AC2A1AF003F3180 /* RADataConfig.m in Sources */,
+				ECD095C21AC2C563003F3180 /* BmobUser+RAUser.m in Sources */,
 				ECD0954E1AC25CBE003F3180 /* AppDelegate.m in Sources */,
+				ECD095781AC26E9F003F3180 /* RAMyViewController.m in Sources */,
+				ECD0957E1AC26EBF003F3180 /* RAListenViewController.m in Sources */,
 				ECD0954B1AC25CBE003F3180 /* main.m in Sources */,
-				ECD095541AC25CBE003F3180 /* ViewController.m in Sources */,
 				ECD095511AC25CBE003F3180 /* RockArea.xcdatamodeld in Sources */,
+				ECD1CC0B1AC4193500B6CCD6 /* UIViewController+Extense.m in Sources */,
+				ECD095B61AC2A6BF003F3180 /* RAUserManager.m in Sources */,
+				ECD0957B1AC26EAE003F3180 /* RASearchViewController.m in Sources */,
+				ECD1CC001AC3CBE300B6CCD6 /* SystemConfig.m in Sources */,
+				ECD1CC101AC41CA500B6CCD6 /* RARegexTextField.m in Sources */,
+				ECD095BC1AC2B799003F3180 /* RABaseDataObject.m in Sources */,
+				ECD095BF1AC2C33A003F3180 /* RAError.m in Sources */,
+				ECD095811AC26EC9003F3180 /* RASeeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,21 +662,41 @@
 		};
 		ECD0956C1AC25CBE003F3180 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585C36E3E32123588F64B0C9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RockArea",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RockArea/AppConfig.pch";
 				INFOPLIST_FILE = RockArea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		ECD0956D1AC25CBE003F3180 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA00D997D4E234E4D5C0B19C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RockArea",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RockArea/AppConfig.pch";
 				INFOPLIST_FILE = RockArea/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -418,6 +753,7 @@
 				ECD0956D1AC25CBE003F3180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECD0956E1AC25CBE003F3180 /* Build configuration list for PBXNativeTarget "RockAreaTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +762,7 @@
 				ECD095701AC25CBE003F3180 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

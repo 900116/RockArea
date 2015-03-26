@@ -1,0 +1,18 @@
+//
+//  AppConfig.pch
+//  RockArea
+//
+//  Created by YongCheHui on 15/3/25.
+//  Copyright (c) 2015年 YongCheHui. All rights reserved.
+//
+
+#ifndef RockArea_AppConfig_pch
+#define RockArea_AppConfig_pch
+
+#import "RADataConfig.h" 
+#import "RAError.h"
+#import <BmobSDK/BmobObject.h>
+#import "BmobObject+BaseType.h"
+#import "UIViewController+Extense.h"
+
+#endif
