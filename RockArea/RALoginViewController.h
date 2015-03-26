@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RARegexTextField.h"
 
 @interface RALoginViewController : UIViewController
 //用户名
-@property (weak, nonatomic) IBOutlet UITextField *nameTF;
+@property (weak, nonatomic) IBOutlet RARegexTextField *nameTF;
 //密码
-@property (weak, nonatomic) IBOutlet UITextField *pwdTF;
+@property (weak, nonatomic) IBOutlet RARegexTextField *pwdTF;
 
 //取消
 -(IBAction)cancel:(id)sender;

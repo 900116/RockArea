@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void(^ReturnKeyAction)();
 
 /**
  *  正则表达式TextField
@@ -16,6 +17,7 @@
  *  正则表达式
  */
 @property(nonatomic,copy) NSString *regex;
-@property(nonatomic,assign) BOOL allowNullContent;
-@property(nonatomic,copy) NSString *regexCheckMessage;
+@property(nonatomic,weak) UITextField *nextTF;
+@property(nonatomic,copy) ReturnKeyAction returnKeyAction;
+-(BOOL)isValid;
 @end

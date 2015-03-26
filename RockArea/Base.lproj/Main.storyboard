@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPK-Vy-60p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ZPK-Vy-60p">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -143,7 +143,7 @@
         <!--Navigation Controller-->
         <scene sceneID="q62-HH-vrN">
             <objects>
-                <navigationController id="zs0-pQ-hay" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNavi" id="zs0-pQ-hay" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XZj-kb-lnM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -169,15 +169,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入邮箱" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-2f-442">
-                                <rect key="frame" x="76" y="117" width="253" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入邮箱" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-2f-442" customClass="RARegexTextField">
+                                <rect key="frame" x="76" y="117" width="253" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MJj-cA-94f"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bna-4c-hEK">
-                                <rect key="frame" x="76" y="176" width="253" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="请输入密码" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bna-4c-hEK" customClass="RARegexTextField">
+                                <rect key="frame" x="76" y="176" width="253" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="kjM-DD-eV9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="go" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -186,7 +192,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="XJb-2f-442" secondAttribute="trailing" constant="30" id="LNg-vG-uoN"/>
                             <constraint firstItem="Bna-4c-hEK" firstAttribute="leading" secondItem="UlK-UA-XZO" secondAttribute="leadingMargin" constant="60" id="Ncx-mo-PfY"/>
                             <constraint firstItem="XJb-2f-442" firstAttribute="top" secondItem="i1x-7N-9pE" secondAttribute="bottom" constant="53" id="XIi-Hb-k9H"/>
-                            <constraint firstItem="Bna-4c-hEK" firstAttribute="top" secondItem="XJb-2f-442" secondAttribute="bottom" constant="29" id="chM-4C-v6f"/>
+                            <constraint firstItem="Bna-4c-hEK" firstAttribute="top" secondItem="XJb-2f-442" secondAttribute="bottom" constant="24" id="chM-4C-v6f"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bna-4c-hEK" secondAttribute="trailing" constant="30" id="edt-7L-OFo"/>
                         </constraints>
                     </view>

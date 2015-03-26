@@ -7,6 +7,8 @@
 //
 
 #import "RARegexTextField.h"
+@interface RARegexTextField()<UITextFieldDelegate>
+@end
 
 @implementation RARegexTextField
 -(instancetype)init
@@ -38,24 +40,63 @@
 
 -(void)customInit
 {
-    [RANotificationCenter addObserver:self selector:@selector(endEditingAction:) name:UITextFieldTextDidEndEditingNotification object:nil];
+    self.delegate = self;
+    self.layer.borderWidth = 0.5;
+    self.layer.borderColor = [UIColor blackColor].CGColor;
+    [RANotificationCenter addObserver:self selector:@selector(textChangeAction:) name:UITextFieldTextDidChangeNotification object:nil];
 }
 
--(void)endEditingAction:(UITextField *)textField
+
+-(BOOL)isValid
 {
-    if (textField == self) {
-        if (!self.allowNullContent) {
-            if (!textField || [textField.text isEqualToString:@""]) {
-                NSLog(@"不允许为空");
-            }
+    if (!self.regex) {
+        return YES;
+    }
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",self.regex];
+    return [predicate evaluateWithObject:self.text];
+}
+
+-(void)textChangeAction:(NSNotification *)nf
+{
+    id obj = nf.object;
+    if (self == obj) {
+        if (![self isValid]) {
+            [self.layer setBorderColor:[UIColor redColor].CGColor];
         }
-        if (self.regex) {
-            NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",self.regex];
-            BOOL isValid = [predicate evaluateWithObject:textField.text];
-            if (!isValid) {
-                NSLog(@"%@",self.regexCheckMessage);
-            }
+        else
+        {
+            [self.layer setBorderColor:[UIColor blackColor].CGColor];
         }
     }
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (![self isValid]) {
+        __weak typeof(self) weakSelf = self;
+        [UIView animateWithDuration:0.8 animations:^{
+            [weakSelf.layer setBorderColor:[UIColor blackColor].CGColor];
+        } completion:^(BOOL finished) {
+            [weakSelf.layer setBorderColor:[UIColor redColor].CGColor];
+        }];
+        return YES;
+    }
+    if (self.returnKeyType == UIReturnKeyNext) {
+        [self.nextTF becomeFirstResponder];
+        [textField resignFirstResponder];
+    }
+    else
+    {
+        if (self.returnKeyAction) {
+            self.returnKeyAction();
+        }
+    }
+    return YES;
+}
+
+-(void)removeFromSuperview
+{
+    [RANotificationCenter removeObserver:self name:UITextFieldTextDidChangeNotification object:nil];    [self.layer setBorderColor:[UIColor redColor].CGColor];
+    [super removeFromSuperview];
 }
 @end

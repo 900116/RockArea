@@ -18,15 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [RAUserManager registerUserWithMail:@"838053527@qq.com" pwd:@"123456" repHandler:^(BmobUser *user, NSError *error) {
-        if (user) {
-            
-        }
-        else
-        {
-            
-        }
-    }];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *loginNavi = [sb instantiateViewControllerWithIdentifier:@"LoginNavi"];
+        [self presentVC:loginNavi];
+    });
 }
 
 - (void)didReceiveMemoryWarning {

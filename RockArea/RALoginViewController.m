@@ -18,6 +18,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.nameTF.regex = @"^([a-zA-Z0-9_\\.\\-])+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$";
+    self.nameTF.nextTF = self.pwdTF;
+    
+    self.pwdTF.regex = @"^[A-Za-z0-9]{6,20}$";
+    __weak typeof(self) weakSelf = self;
+    self.pwdTF.returnKeyAction = ^{
+        NSLog(@"登陆过程");
+        [weakSelf loginAction];
+    };
 }
 
 -(IBAction)cancel:(id)sender
@@ -27,6 +36,30 @@
 
 -(IBAction)confirm:(id)sender
 {
+    [self loginAction];
+}
+
+-(void)loginAction
+{
+    if ([self.nameTF.text isEqualToString:@""]) {
+        NSLog(@"邮箱不允许为空");
+        return;
+    }
+    else if(!self.nameTF.isValid)
+    {
+        NSLog(@"邮箱的格式不对");
+        return;
+    }
+    else if ([self.pwdTF.text isEqualToString:@""])
+    {
+        NSLog(@"密码不允许为空");
+        return;
+    }
+    else if (!self.pwdTF.isValid)
+    {
+        NSLog(@"密码的格式不对");
+        return;
+    }
     [RAUserManager loginWithUserName:_nameTF.text pwd:_pwdTF.text repHandler:^(BmobUser *user, RAError *error) {
         if (user) {
             [RANotificationCenter postNotificationName:RALoginSuccessNotificationKey object:nil];
