@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A23C42AF-A87A-44E0-BB65-F38FB71A5473</string>
+	<key>IDESourceControlProjectName</key>
+	<string>RockArea</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2D641813A2583FBCCD9A923DBD21275A89D5061A</key>
+		<string>https://github.com/900116/RockArea.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>RockArea.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2D641813A2583FBCCD9A923DBD21275A89D5061A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/900116/RockArea.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2D641813A2583FBCCD9A923DBD21275A89D5061A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2D641813A2583FBCCD9A923DBD21275A89D5061A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RockArea</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -60,7 +60,7 @@
         NSLog(@"密码的格式不对");
         return;
     }
-    [RAUserManager loginWithUserName:_nameTF.text pwd:_pwdTF.text repHandler:^(BmobUser *user, RAError *error) {
+    [RAUserManager loginWithUserName:_nameTF.text pwd:_pwdTF.text repHandler:^(RAUser *user, RAError *error) {
         if (user) {
             [RANotificationCenter postNotificationName:RALoginSuccessNotificationKey object:nil];
             [self dismiss];

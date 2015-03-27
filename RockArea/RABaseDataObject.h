@@ -12,12 +12,6 @@
  *  这是一个抽象类，只能继承
  */
 @interface RABaseDataObject : NSObject
-/**
- *  必须被重写
- *
- *  @return 模版名字
- */
--(NSString *)modelName;
 +(id)newObject;
 -(void)saveInBackgroundWithResultBlock:(BmobBooleanResultBlock)block;
 +(instancetype)objectWithBombObj:(BmobObject *)bObj;
@@ -30,4 +24,9 @@
 
 -(int)intForKey:(NSString *)key;
 -(void)setInt:(int)intValue forKey:(NSString *)key;
+
+@property(nonatomic)NSString *objectId;
+@property(nonatomic)NSDate *updatedAt;
+@property(nonatomic)NSDate *createdAt;
+@property(nonatomic)NSString * className;
 @end

@@ -13,4 +13,7 @@
 
 -(void)setBool:(BOOL)boolValue forKey:(NSString *)key;
 -(BOOL)boolForKey:(NSString *)key;
+
+-(void)setDouble:(double)doubleValue forKey:(NSString *)key;
+-(BOOL)doubleForKey:(NSString *)key;
 @end

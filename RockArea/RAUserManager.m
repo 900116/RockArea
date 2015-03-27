@@ -10,9 +10,9 @@
 
 @implementation RAUserManager
 #pragma mark - 注册
-+(void)registerUserWithMail:(NSString *)email pwd:(NSString *)pwd repHandler:(void(^)(BmobUser *user,RAError * error))repHander
++(void)registerUserWithMail:(NSString *)email pwd:(NSString *)pwd repHandler:(void(^)(RAUser *user,RAError * error))repHander
 {
-    BmobUser *newUser = [[BmobUser alloc]init];
+    RAUser *newUser = [[RAUser alloc]init];
     [newUser setUserName:email];
     [newUser setEmail:email];
     [newUser setPassword:pwd];
@@ -28,9 +28,9 @@
 }
 
 #pragma mark - 登陆
-+(void)loginWithUserName:(NSString *)userName pwd:(NSString *)pwd repHandler:(void(^)(BmobUser *user,RAError *error))repHander
++(void)loginWithUserName:(NSString *)userName pwd:(NSString *)pwd repHandler:(void(^)(RAUser *user,RAError *error))repHander
 {
-    [BmobUser loginWithUsernameInBackground:userName password:pwd block:^(BmobUser *user, NSError *error) {
+    [RAUser loginWithUsernameInBackground:userName password:pwd block:^(RAUser *user, NSError *error) {
         repHander(user,(RAError *)error);
     }];
 }
@@ -38,13 +38,13 @@
 #pragma mark - 注销
 +(void)logout
 {
-    [BmobUser logout];
+    [RAUser logout];
 }
 
 #pragma mark - 找回密码
 +(void)findPwd:(NSString *)pwd
 {
-    [BmobUser requestPasswordResetInBackgroundWithEmail:pwd];
+    [RAUser requestPasswordResetInBackgroundWithEmail:pwd];
 }
 
 @end

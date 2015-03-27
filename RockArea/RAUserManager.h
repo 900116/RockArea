@@ -22,7 +22,7 @@
  *  @param pwd       密码
  *  @param repHander 返回回调
  */
-+(void)registerUserWithMail:(NSString *)email pwd:(NSString *)pwd repHandler:(void(^)(BmobUser *user,RAError *error))repHander;
++(void)registerUserWithMail:(NSString *)email pwd:(NSString *)pwd repHandler:(void(^)(RAUser *user,RAError *error))repHander;
 
 
 #pragma mark - 登陆
@@ -33,7 +33,7 @@
  *  @param pwd       密码
  *  @param repHander 返回回调
  */
-+(void)loginWithUserName:(NSString *)userName pwd:(NSString *)pwd repHandler:(void(^)(BmobUser *user,RAError *error))repHander;
++(void)loginWithUserName:(NSString *)userName pwd:(NSString *)pwd repHandler:(void(^)(RAUser *user,RAError *error))repHander;
 
 #pragma mark - 注销
 +(void)logout;

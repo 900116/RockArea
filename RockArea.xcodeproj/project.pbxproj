@@ -43,6 +43,7 @@
 		ECD1CC071AC416F800B6CCD6 /* RALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC061AC416F800B6CCD6 /* RALoginViewController.m */; };
 		ECD1CC0B1AC4193500B6CCD6 /* UIViewController+Extense.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC0A1AC4193500B6CCD6 /* UIViewController+Extense.m */; };
 		ECD1CC101AC41CA500B6CCD6 /* RARegexTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC0F1AC41CA500B6CCD6 /* RARegexTextField.m */; };
+		ECD1CC131AC4F1B000B6CCD6 /* RALifeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC121AC4F1B000B6CCD6 /* RALifeModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,8 @@
 		ECD1CC0A1AC4193500B6CCD6 /* UIViewController+Extense.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extense.m"; sourceTree = "<group>"; };
 		ECD1CC0E1AC41CA500B6CCD6 /* RARegexTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RARegexTextField.h; sourceTree = "<group>"; };
 		ECD1CC0F1AC41CA500B6CCD6 /* RARegexTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARegexTextField.m; sourceTree = "<group>"; };
+		ECD1CC111AC4F1B000B6CCD6 /* RALifeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALifeModel.h; sourceTree = "<group>"; };
+		ECD1CC121AC4F1B000B6CCD6 /* RALifeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALifeModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,17 @@
 				DA00D997D4E234E4D5C0B19C /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC454CFA1AC531FB00BA2CB6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ECD1CBF91AC3A3EA00B6CCD6 /* BmobObject+BaseType.h */,
+				ECD1CBFA1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m */,
+				ECD095BA1AC2B799003F3180 /* RABaseDataObject.h */,
+				ECD095BB1AC2B799003F3180 /* RABaseDataObject.m */,
+			);
+			name = Base;
 			sourceTree = "<group>";
 		};
 		ECD0953C1AC25CBE003F3180 = {
@@ -292,16 +306,13 @@
 		ECD095831AC29F62003F3180 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				EC454CFA1AC531FB00BA2CB6 /* Base */,
 				ECD1CC011AC40FB600B6CCD6 /* Life */,
 				ECD095B31AC2A6A2003F3180 /* UserManager */,
 				ECD0958B1AC2A1AF003F3180 /* RADataConfig.h */,
 				ECD0958C1AC2A1AF003F3180 /* RADataConfig.m */,
-				ECD095BA1AC2B799003F3180 /* RABaseDataObject.h */,
-				ECD095BB1AC2B799003F3180 /* RABaseDataObject.m */,
 				ECD095BD1AC2C33A003F3180 /* RAError.h */,
 				ECD095BE1AC2C33A003F3180 /* RAError.m */,
-				ECD1CBF91AC3A3EA00B6CCD6 /* BmobObject+BaseType.h */,
-				ECD1CBFA1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -358,6 +369,8 @@
 		ECD1CC011AC40FB600B6CCD6 /* Life */ = {
 			isa = PBXGroup;
 			children = (
+				ECD1CC111AC4F1B000B6CCD6 /* RALifeModel.h */,
+				ECD1CC121AC4F1B000B6CCD6 /* RALifeModel.m */,
 			);
 			name = Life;
 			sourceTree = "<group>";
@@ -538,6 +551,7 @@
 				ECD0957B1AC26EAE003F3180 /* RASearchViewController.m in Sources */,
 				ECD1CC001AC3CBE300B6CCD6 /* SystemConfig.m in Sources */,
 				ECD1CC101AC41CA500B6CCD6 /* RARegexTextField.m in Sources */,
+				ECD1CC131AC4F1B000B6CCD6 /* RALifeModel.m in Sources */,
 				ECD095BC1AC2B799003F3180 /* RABaseDataObject.m in Sources */,
 				ECD095BF1AC2C33A003F3180 /* RAError.m in Sources */,
 				ECD095811AC26EC9003F3180 /* RASeeViewController.m in Sources */,

@@ -7,11 +7,13 @@
 //
 
 #import "SystemConfig.h"
+static NSString* const ra_cmid_key = @"ID";
+static NSString* const ra_cmname_key = @"name";
 @implementation ConfigModel
 - (void)encodeWithCoder:(NSCoder*)coder
 {
-    [coder encodeInt:_ID forKey:@"ID"];
-    [coder encodeObject:_name forKey:@"Name"];
+    [coder encodeInt:_ID forKey:ra_cmid_key];
+    [coder encodeObject:_name forKey:ra_cmname_key];
 }
 
 - (id)initWithCoder:(NSCoder*)decoder
@@ -22,8 +24,8 @@
         {
             return self;
         }
-        _ID = [decoder decodeIntForKey:@"ID"];
-        _name = [decoder decodeObjectForKey:@"Name"];
+        _ID = [decoder decodeIntForKey:ra_cmid_key];
+        _name = [decoder decodeObjectForKey:ra_cmname_key];
     }
     return self;
 }
@@ -31,6 +33,14 @@
 -(NSString *)description
 {
     return [NSString stringWithFormat:@"{ID:%d,name:%@}",self.ID,self.name];
+}
+
++(ConfigModel *)objectWithBmobObj:(BmobObject *)obj
+{
+    ConfigModel *result = [[ConfigModel alloc]init];
+    result.ID = [obj intforKey:ra_cmid_key];
+    result.name = [obj objectForKey:ra_cmname_key];
+    return result;
 }
 @end
 
@@ -112,9 +122,7 @@ static NSString* const ra_instrumentsUpdateKey = @"InstrumentsUpdate";
     [subQuery findObjectsInBackgroundWithBlock:^(NSArray *array, NSError *error) {
         NSMutableArray *datas = [[NSMutableArray alloc]init];
         for (BmobObject* bObj in array) {
-            ConfigModel* model = [[ConfigModel alloc]init];
-            model.ID = [[bObj objectForKey:@"ID"] intValue];
-            model.name = [bObj objectForKey:@"name"];
+            ConfigModel* model = [ConfigModel objectWithBmobObj:bObj];
             [datas addObject:[NSKeyedArchiver archivedDataWithRootObject:model]];
         }
         if (datas.count > 0) {
@@ -163,7 +171,7 @@ static NSString* const ra_instrumentsUpdateKey = @"InstrumentsUpdate";
         [result addObject:[NSKeyedUnarchiver unarchiveObjectWithData:data]];
     }
     NSLog(@"%@",result);
-    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:@"ID" ascending:YES];
+    NSSortDescriptor *sort = [NSSortDescriptor sortDescriptorWithKey:ra_cmid_key ascending:YES];
     return [result sortedArrayUsingDescriptors:@[sort]];
 }
 

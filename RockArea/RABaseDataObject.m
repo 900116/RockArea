@@ -15,25 +15,20 @@
 @end
 
 @implementation RABaseDataObject
--(NSString *)modelName
-{
-    NSAssert(YES, @"该方法必须被重载");
-    return nil;
-}
-
 +(id)newObject
 {
     RABaseDataObject *obj = [[self alloc]init];
     return obj;
 }
 
--(id)init
+-(void)setClassName:(NSString *)className
 {
-    self = [super init];
-    if (self) {
-        _obj = [BmobObject objectWithClassName:[self modelName]];
-    }
-    return self;
+    _obj = [BmobObject objectWithClassName:className];
+}
+
+-(NSString *)className
+{
+    return _obj.className;
 }
 
 -(void)saveInBackgroundWithResultBlock:(BmobBooleanResultBlock)block
@@ -82,4 +77,37 @@
 {
     [_obj setInt:intValue forKey:key];
 }
+
+#pragma mark BmobObject
+-(void)setObjectId:(NSString *)objectId
+{
+    _obj.objectId = objectId;
+}
+
+-(NSString *)objectId
+{
+    return _obj.objectId;
+}
+
+-(void)setUpdatedAt:(NSDate *)updatedAt
+{
+    _obj.updatedAt = updatedAt;
+}
+
+-(NSDate *)updatedAt
+{
+    return _obj.updatedAt;
+}
+
+-(void)setCreatedAt:(NSDate *)createdAt
+{
+    _obj.createdAt = createdAt;
+}
+
+-(NSDate *)createdAt
+{
+    return _obj.createdAt;
+}
+
+
 @end

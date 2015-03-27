@@ -28,6 +28,16 @@
 {
     return [[self objectForKey:key] boolValue];
 }
+
+-(void)setDouble:(double)doubleValue forKey:(NSString *)key
+{
+    [self setObject:[NSNumber numberWithDouble:doubleValue] forKey:key];
+}
+
+-(BOOL)doubleForKey:(NSString *)key
+{
+    return [[self objectForKey:key] doubleValue];
+}
 @end
 
 
