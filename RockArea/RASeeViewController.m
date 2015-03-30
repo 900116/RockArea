@@ -8,6 +8,7 @@
 
 #import "RASeeViewController.h"
 #import "RAUserManager.h"
+#import "RALifeManager.h"
 
 @interface RASeeViewController ()
 
@@ -25,8 +26,9 @@
     });
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)sendContent:(id)sender {
+    [RALifeManager sendTextLifeWithText:@"呵呵" finishHandler:^(BOOL isSuccess, NSError *error) {
+        NSLog(@"%d",isSuccess);
+    }];
 }
 @end

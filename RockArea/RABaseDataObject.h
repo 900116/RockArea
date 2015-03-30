@@ -25,6 +25,9 @@
 -(int)intForKey:(NSString *)key;
 -(void)setInt:(int)intValue forKey:(NSString *)key;
 
+
+-(void)addRelation:(BmobRelation *)relation ForKey:(NSString *)key;
+
 @property(nonatomic)NSString *objectId;
 @property(nonatomic)NSDate *updatedAt;
 @property(nonatomic)NSDate *createdAt;

@@ -45,4 +45,6 @@ typedef NS_ENUM(int, RALifeContentType){
 @property(nonatomic) RALifeContentType contentType;
 @property(nonatomic) BmobFile *audio;
 @property(nonatomic) int audioLength;
+@property(nonatomic) BOOL isAdimre;
++(instancetype)newLife;
 @end

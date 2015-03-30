@@ -17,7 +17,7 @@
 @implementation RABaseDataObject
 +(id)newObject
 {
-    RABaseDataObject *obj = [[self alloc]init];
+    __autoreleasing RABaseDataObject *obj = [[self alloc]init];
     return obj;
 }
 
@@ -43,7 +43,7 @@
 
 +(instancetype)objectWithBombObj:(BmobObject *)bObj
 {
-    RABaseDataObject *obj = [[self alloc]init];
+    __autoreleasing RABaseDataObject *obj = [[self alloc]init];
     obj->_obj = bObj;
     return obj;
 }
@@ -109,5 +109,8 @@
     return _obj.createdAt;
 }
 
-
+-(void)addRelation:(BmobRelation *)relation ForKey:(NSString *)key
+{
+    [_obj addRelation:relation forKey:key];
+}
 @end

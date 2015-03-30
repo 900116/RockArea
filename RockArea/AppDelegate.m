@@ -18,7 +18,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [RADataConfig BombConfig];
-    //到付
+
+    NSMutableArray *array = [NSMutableArray new];
+    NSObject *obj = [[NSObject alloc]init];
+    [array addObject:obj];
+    obj = [[NSObject alloc]init];
+    [array addObject:obj];
+    int count = 0;
+    while (true) {
+        NSLog(@"%d",count);
+        [array addObjectsFromArray:array];
+    }
     return YES;
 }
 

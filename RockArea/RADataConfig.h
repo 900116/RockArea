@@ -24,9 +24,16 @@ static NSString* const raUserModelName = @"User";
 static NSString* const raSytemConfigModelName = @"SystemConfig";
 static NSString* const raStylesModelName = @"Styles";
 static NSString* const raInstumentsModelName = @"Instruments";
+static NSString* const raLifeModelName = @"Life";
 
 #pragma mark 通知key
 static NSString* const RALoginSuccessNotificationKey = @"loginSuccess";
+
+#pragma mark block
+typedef void(^FinishArrayHandler)(NSArray * results,NSError * error);
+typedef void(^FinishBoolHandler)(BOOL isSuccess,NSError * error);
+typedef void(^FinishStringHandler)(NSString * string,NSError * error);
+typedef void(^FinishUploadImageHandler)(NSArray * urls,NSArray *sizes,NSError * error);
 
 @interface RADataConfig : NSObject
 /**

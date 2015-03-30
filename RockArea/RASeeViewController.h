@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RASeeViewController : UIViewController
-
+- (IBAction)sendContent:(id)sender;
 @end

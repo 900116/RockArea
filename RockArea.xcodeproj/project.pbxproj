@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2BD4FB351AC4662800F01C8E /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2BD4FB341AC4662800F01C8E /* Podfile */; };
 		9A2AEB77881F74EA8DDB0B6C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FE33B93B89039F043A1B461 /* libPods.a */; };
+		ECCF1BC71AC8F80A00C72306 /* RALifeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF1BC61AC8F80A00C72306 /* RALifeManager.m */; };
+		ECCF1BCC1AC90FF300C72306 /* RAUploadImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF1BCB1AC90FF300C72306 /* RAUploadImageHelper.m */; };
+		ECCF1BD01AC939C600C72306 /* RADragControlBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECCF1BCF1AC939C600C72306 /* RADragControlBar.m */; };
 		ECD0954B1AC25CBE003F3180 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954A1AC25CBE003F3180 /* main.m */; };
 		ECD0954E1AC25CBE003F3180 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954D1AC25CBE003F3180 /* AppDelegate.m */; };
 		ECD095511AC25CBE003F3180 /* RockArea.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECD0954F1AC25CBE003F3180 /* RockArea.xcdatamodeld */; };
@@ -61,6 +64,12 @@
 		4FE33B93B89039F043A1B461 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		585C36E3E32123588F64B0C9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DA00D997D4E234E4D5C0B19C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		ECCF1BC51AC8F80A00C72306 /* RALifeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALifeManager.h; sourceTree = "<group>"; };
+		ECCF1BC61AC8F80A00C72306 /* RALifeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALifeManager.m; sourceTree = "<group>"; };
+		ECCF1BCA1AC90FF300C72306 /* RAUploadImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAUploadImageHelper.h; sourceTree = "<group>"; };
+		ECCF1BCB1AC90FF300C72306 /* RAUploadImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAUploadImageHelper.m; sourceTree = "<group>"; };
+		ECCF1BCE1AC939C600C72306 /* RADragControlBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RADragControlBar.h; sourceTree = "<group>"; };
+		ECCF1BCF1AC939C600C72306 /* RADragControlBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RADragControlBar.m; sourceTree = "<group>"; };
 		ECD095451AC25CBE003F3180 /* RockArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECD095491AC25CBE003F3180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECD0954A1AC25CBE003F3180 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -179,6 +188,31 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		ECCF1BC81AC8FC8900C72306 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Comment;
+			sourceTree = "<group>";
+		};
+		ECCF1BC91AC90FDA00C72306 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				ECCF1BCA1AC90FF300C72306 /* RAUploadImageHelper.h */,
+				ECCF1BCB1AC90FF300C72306 /* RAUploadImageHelper.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		ECCF1BCD1AC9361C00C72306 /* RADragDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				ECCF1BCE1AC939C600C72306 /* RADragControlBar.h */,
+				ECCF1BCF1AC939C600C72306 /* RADragControlBar.m */,
+			);
+			name = RADragDownMenu;
+			sourceTree = "<group>";
+		};
 		ECD0953C1AC25CBE003F3180 = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +237,7 @@
 		ECD095471AC25CBE003F3180 /* RockArea */ = {
 			isa = PBXGroup;
 			children = (
+				ECCF1BC91AC90FDA00C72306 /* Util */,
 				ECD095881AC2A16B003F3180 /* Lib */,
 				ECD095831AC29F62003F3180 /* Data */,
 				ECD095821AC26ED1003F3180 /* StoryBoard */,
@@ -306,6 +341,7 @@
 		ECD095831AC29F62003F3180 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				ECCF1BC81AC8FC8900C72306 /* Comment */,
 				EC454CFA1AC531FB00BA2CB6 /* Base */,
 				ECD1CC011AC40FB600B6CCD6 /* Life */,
 				ECD095B31AC2A6A2003F3180 /* UserManager */,
@@ -371,6 +407,8 @@
 			children = (
 				ECD1CC111AC4F1B000B6CCD6 /* RALifeModel.h */,
 				ECD1CC121AC4F1B000B6CCD6 /* RALifeModel.m */,
+				ECCF1BC51AC8F80A00C72306 /* RALifeManager.h */,
+				ECCF1BC61AC8F80A00C72306 /* RALifeManager.m */,
 			);
 			name = Life;
 			sourceTree = "<group>";
@@ -387,6 +425,7 @@
 		ECD1CC0C1AC41C5F00B6CCD6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ECCF1BCD1AC9361C00C72306 /* RADragDownMenu */,
 				ECD1CC0D1AC41C6B00B6CCD6 /* RARegexTextField */,
 			);
 			name = View;
@@ -546,11 +585,14 @@
 				ECD0957E1AC26EBF003F3180 /* RAListenViewController.m in Sources */,
 				ECD0954B1AC25CBE003F3180 /* main.m in Sources */,
 				ECD095511AC25CBE003F3180 /* RockArea.xcdatamodeld in Sources */,
+				ECCF1BC71AC8F80A00C72306 /* RALifeManager.m in Sources */,
 				ECD1CC0B1AC4193500B6CCD6 /* UIViewController+Extense.m in Sources */,
 				ECD095B61AC2A6BF003F3180 /* RAUserManager.m in Sources */,
 				ECD0957B1AC26EAE003F3180 /* RASearchViewController.m in Sources */,
+				ECCF1BD01AC939C600C72306 /* RADragControlBar.m in Sources */,
 				ECD1CC001AC3CBE300B6CCD6 /* SystemConfig.m in Sources */,
 				ECD1CC101AC41CA500B6CCD6 /* RARegexTextField.m in Sources */,
+				ECCF1BCC1AC90FF300C72306 /* RAUploadImageHelper.m in Sources */,
 				ECD1CC131AC4F1B000B6CCD6 /* RALifeModel.m in Sources */,
 				ECD095BC1AC2B799003F3180 /* RABaseDataObject.m in Sources */,
 				ECD095BF1AC2C33A003F3180 /* RAError.m in Sources */,
