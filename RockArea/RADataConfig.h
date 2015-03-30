@@ -25,6 +25,7 @@ static NSString* const raSytemConfigModelName = @"SystemConfig";
 static NSString* const raStylesModelName = @"Styles";
 static NSString* const raInstumentsModelName = @"Instruments";
 static NSString* const raLifeModelName = @"Life";
+static NSString* const raLifeAdmireModelName = @"LifeAdmires";
 
 #pragma mark 通知key
 static NSString* const RALoginSuccessNotificationKey = @"loginSuccess";

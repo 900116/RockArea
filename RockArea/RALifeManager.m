@@ -39,6 +39,17 @@
     }];
 }
 
+/**
+ *  检测是否被赞
+ *
+ *  @param life 生活
+ */
++(void)detectLifeisAdmire:(RALifeModel *)life
+{
+    BmobQuery *bquery = [BmobQuery queryWithClassName:raUserModelName];
+    
+}
+
 +(BmobRelation *)sendUser
 {
     __autoreleasing BmobRelation *currUser  = [BmobRelation relation];
@@ -104,22 +115,17 @@
 #pragma mark - 赞
 +(void)admireTheLife:(RALifeModel *)model
 {
-    if (model.isAdimre) {
-        model.admireCount --;
-        [model.admires removeObject:[RAUser getCurrentUser]];
+    model.admireCount ++;
+    if (!model.admires) {
+        BmobRelation *relation = [BmobRelation relation];
+        
+        
+        [relation addObject:[RAUser getCurrentUser]];
+        model.admires = relation;
     }
     else
     {
-        model.admireCount ++;
-        if (!model.admires) {
-            BmobRelation *relation = [BmobRelation relation];
-            [relation addObject:[RAUser getCurrentUser]];
-            model.admires = relation;
-        }
-        else
-        {
-            [model.admires addObject:[RAUser getCurrentUser]];
-        }
+        [model.admires addObject:[RAUser getCurrentUser]];
     }
 }
 @end
