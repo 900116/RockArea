@@ -14,7 +14,10 @@
 @interface RABaseDataObject : NSObject
 +(id)newObject;
 -(void)saveInBackgroundWithResultBlock:(BmobBooleanResultBlock)block;
+-(void)saveInBackground;
 +(instancetype)objectWithBombObj:(BmobObject *)bObj;
+-(void)updateInBackground;
+-(void)deleteInBackground;
 
 -(id)objectForKey:(NSString *)key;
 -(void)setObject:(id)obj forKey:(NSString *)key;
@@ -31,5 +34,8 @@
 @property(nonatomic)NSString *objectId;
 @property(nonatomic)NSDate *updatedAt;
 @property(nonatomic)NSDate *createdAt;
-@property(nonatomic)NSString * className;
+
+-(BmobObject *)bObj;
++(NSString *)className;
++(instancetype)objectWithObjectId:(NSString *)objectId;
 @end

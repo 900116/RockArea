@@ -16,6 +16,11 @@ static NSString* const ra_cmname_key = @"name";
     [coder encodeObject:_name forKey:ra_cmname_key];
 }
 
++(NSString *)className
+{
+    return raSytemConfigModelName;
+}
+
 - (id)initWithCoder:(NSCoder*)decoder
 {
     if (self = [super init])
@@ -80,11 +85,11 @@ static NSString* const ra_instrumentsUpdateKey = @"InstrumentsUpdate";
 
 -(void)detectUpdate
 {
-    NSNumber *styleUpdate = [RAUserDefaulter objectForKey:ra_stylesUpdateKey];
-    NSNumber *instrumentsUpdate = [RAUserDefaulter objectForKey:ra_instrumentsUpdateKey];
+    NSNumber *styleUpdate = [RAUserDefaulter() objectForKey:ra_stylesUpdateKey];
+    NSNumber *instrumentsUpdate = [RAUserDefaulter() objectForKey:ra_instrumentsUpdateKey];
     if (!styleUpdate) {
-        [RAUserDefaulter setObject:[NSNumber numberWithInt:self.stylesUpdate] forKey:ra_stylesUpdateKey];
-        [RAUserDefaulter setObject:[NSNumber numberWithInt:self.instrumentsUpdate] forKey:ra_instrumentsUpdateKey];
+        [RAUserDefaulter() setObject:[NSNumber numberWithInt:self.stylesUpdate] forKey:ra_stylesUpdateKey];
+        [RAUserDefaulter() setObject:[NSNumber numberWithInt:self.instrumentsUpdate] forKey:ra_instrumentsUpdateKey];
     }
     BOOL needStyleUpdate = styleUpdate.intValue < self.stylesUpdate;
     BOOL needInstrumentsUpdate = instrumentsUpdate.intValue < self.instrumentsUpdate;
@@ -95,13 +100,13 @@ static NSString* const ra_instrumentsUpdateKey = @"InstrumentsUpdate";
 -(void)asynUpdateWithKey:(NSString *)key needUpdate:(BOOL)needUpdate modelName:(NSString *)modelName
 {
     if ([modelName isEqualToString:raInstumentsModelName]) {
-        [RAUserDefaulter setObject:[NSNumber numberWithInt:self.instrumentsUpdate] forKey:ra_instrumentsUpdateKey];
+        [RAUserDefaulter() setObject:[NSNumber numberWithInt:self.instrumentsUpdate] forKey:ra_instrumentsUpdateKey];
     }
     else if([modelName isEqualToString:raStylesModelName])
     {
-        [RAUserDefaulter setObject:[NSNumber numberWithInt:self.stylesUpdate] forKey:ra_stylesUpdateKey];
+        [RAUserDefaulter() setObject:[NSNumber numberWithInt:self.stylesUpdate] forKey:ra_stylesUpdateKey];
     }
-    NSArray *data = [RAUserDefaulter objectForKey:key];
+    NSArray *data = [RAUserDefaulter() objectForKey:key];
     if (!data) {
         [self asynUpdateDataForKey:key modelName:modelName];
     }
@@ -126,8 +131,8 @@ static NSString* const ra_instrumentsUpdateKey = @"InstrumentsUpdate";
             [datas addObject:[NSKeyedArchiver archivedDataWithRootObject:model]];
         }
         if (datas.count > 0) {
-            [RAUserDefaulter setObject:datas forKey:key];
-            [RAUserDefaulter synchronize];
+            [RAUserDefaulter() setObject:datas forKey:key];
+            [RAUserDefaulter() synchronize];
         }
         NSLog(@"%@",datas);
     }];
@@ -166,7 +171,7 @@ static NSString* const ra_instrumentsUpdateKey = @"InstrumentsUpdate";
 -(NSArray *)archiveArrayFromUDWithKey:(NSString *)key
 {
     NSMutableArray *result = [NSMutableArray new];
-    NSArray *array = [RAUserDefaulter objectForKey:key];
+    NSArray *array = [RAUserDefaulter() objectForKey:key];
     for (NSData *data in array) {
         [result addObject:[NSKeyedUnarchiver unarchiveObjectWithData:data]];
     }

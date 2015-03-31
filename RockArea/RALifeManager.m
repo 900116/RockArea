@@ -15,7 +15,7 @@
 #pragma mark 获得生活列表
 +(void)getLifesWithPage:(int)page intPageSize:(int)pageSize finishHandler:(FinishArrayHandler)handler
 {
-    BmobQuery *bquery = [BmobQuery queryWithClassName:raLifeModelName];
+    BmobQuery *bquery = [RALifeModel lifeQuery];
     //分页
     bquery.limit = pageSize;
     bquery.skip = pageSize * page;
@@ -46,24 +46,15 @@
  */
 +(void)detectLifeisAdmire:(RALifeModel *)life
 {
-    BmobQuery *bquery = [BmobQuery queryWithClassName:raUserModelName];
-    
+    [life detectIsAdmire:nil];
 }
 
-+(BmobRelation *)sendUser
-{
-    __autoreleasing BmobRelation *currUser  = [BmobRelation relation];
-    RAUser *user = [RAUser getCurrentUser];
-    [currUser addObject:user];
-    return currUser;
-}
 
 #pragma mark 发生活
 +(void)sendTextLifeWithText:(NSString *)text finishHandler:(FinishBoolHandler)handler
 {
-    RALifeModel *life = [RALifeModel newLife];
+    RALifeModel *life = [RALifeModel newObject];
     life.text = text;
-    life.sendUser = [self sendUser];
     life.contentType = RALifeContentTypeText;
     [life saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
         handler(isSuccessful,error);
@@ -74,10 +65,9 @@
 {
     [RAUploadImageHelper uploadImages:images handler:^(NSArray *urls, NSArray *sizes, NSError *error) {
         if (!error) {
-            RALifeModel *life = [RALifeModel newLife];
+            RALifeModel *life = [RALifeModel newObject];
             life.images = urls;
             life.imageSizes = sizes;
-            life.sendUser = [self sendUser];
             life.contentType = RALifeContentTypeImage;
             [life saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
                 handler(isSuccessful,error);
@@ -95,10 +85,9 @@
 {
     [RAUploadImageHelper uploadImages:images handler:^(NSArray *urls, NSArray *sizes, NSError *error) {
         if (!error) {
-            RALifeModel *life = [RALifeModel newLife];
+            RALifeModel *life = [RALifeModel newObject];
             life.images = urls;
             life.imageSizes = sizes;
-            life.sendUser = [self sendUser];
             life.contentType = RALifeContentTypeImageAndText;
             life.text = text;
             [life saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
@@ -112,20 +101,46 @@
     }];
 }
 
-#pragma mark - 赞
-+(void)admireTheLife:(RALifeModel *)model
+#pragma mark - 删除生活
+/**
+ *  删除生活
+ *
+ *  @param life 生活
+ */
++(void)deleteTheLife:(RALifeModel *)life
 {
-    model.admireCount ++;
-    if (!model.admires) {
-        BmobRelation *relation = [BmobRelation relation];
-        
-        
-        [relation addObject:[RAUser getCurrentUser]];
-        model.admires = relation;
+    [life deleteInBackground];
+}
+
+#pragma mark - 赞或取消赞
++(void)admireActionTheLife:(RALifeModel *)model
+{
+    if (model.isAdimre) {
+        [model unAdmireAction];
     }
     else
     {
-        [model.admires addObject:[RAUser getCurrentUser]];
+        [model admireAction];
     }
+}
+
+#pragma mark - 评论
++(void)commentTheLife:(RALifeModel *)model text:(NSString *)commentText
+{
+    RALifeComment *comment = [RALifeComment newObject];
+    comment.text = commentText;
+    comment.type = RACommentTypeComment;
+    [comment saveInBackgroundWithResultBlock:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            [model addComment:comment];
+            [model updateInBackground];
+        }
+    }];
+}
+
+#pragma mark - 删除评论
++(void)deleteComment:(RALifeComment *)comment
+{
+    [comment deleteInBackground];
 }
 @end

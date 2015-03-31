@@ -62,7 +62,7 @@
     }
     [RAUserManager loginWithUserName:_nameTF.text pwd:_pwdTF.text repHandler:^(RAUser *user, RAError *error) {
         if (user) {
-            [RANotificationCenter postNotificationName:RALoginSuccessNotificationKey object:nil];
+            [RANotificationCenter() postNotificationName:RALoginSuccessNotificationKey object:nil];
             [self dismiss];
         }
         else

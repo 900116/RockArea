@@ -7,6 +7,7 @@
 //
 
 #import "RABaseDataObject.h"
+#import "RALifeComment.h"
 /**
  *  内容类型
  */
@@ -35,16 +36,21 @@ typedef NS_ENUM(int, RALifeContentType){
 
 @interface RALifeModel : RABaseDataObject
 @property(nonatomic) NSString *text;
-@property(nonatomic) BmobRelation *sendUser;
 @property(nonatomic) NSArray *images;
 @property(nonatomic) NSArray *imageSizes;
 @property(nonatomic) int admireCount;
 @property(nonatomic) int commentCount;
-@property(nonatomic) BmobRelation *admires;
-@property(nonatomic) BmobRelation *comments;
 @property(nonatomic) RALifeContentType contentType;
 @property(nonatomic) BmobFile *audio;
 @property(nonatomic) int audioLength;
 @property(nonatomic) BOOL isAdimre;
-+(instancetype)newLife;
+@property(nonatomic) NSString *usrID;
+-(void)findSendUser;
+-(RAUser *)sendUser;
+-(void)detectIsAdmire:(FinishVoidHandler)handler;
+-(void)admireAction;
+-(void)unAdmireAction;
+-(void)addComment:(RALifeComment*)comment;
++(BmobQuery *)lifeQuery;
+-(void)getAdmireArray:(FinishArrayHandler)handler;
 @end

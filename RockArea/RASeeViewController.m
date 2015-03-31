@@ -27,8 +27,25 @@
 }
 
 - (IBAction)sendContent:(id)sender {
-    [RALifeManager sendTextLifeWithText:@"呵呵" finishHandler:^(BOOL isSuccess, NSError *error) {
-        NSLog(@"%d",isSuccess);
-    }];
+    //发生活
+//    [RALifeManager sendTextLifeWithText:@"呵呵" finishHandler:^(BOOL isSuccess, NSError *error) {
+//        NSLog(@"%d",isSuccess);
+//    }];
+
+    //赞／取消赞
+//    BmobQuery *bq = [BmobQuery queryWithClassName:raLifeModelName];
+    
+    
+//    [bq getObjectInBackgroundWithId:@"XG3sYYYZ" block:^(BmobObject *object, NSError *error) {
+//        RALifeModel *life = [RALifeModel objectWithBombObj:object];
+//        [life detectIsAdmire:^{
+//            [RALifeManager admireActionTheLife:life];
+//        }];
+//    }];
+    
+    //发评论
+    [RALifeManager commentTheLife:[RALifeModel objectWithObjectId:@"XG3sYYYZ"] text:@"嘻嘻"];
+    
+   
 }
 @end

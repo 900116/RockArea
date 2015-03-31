@@ -149,33 +149,33 @@ static NSString* const ra_user_favorLifesKey = @"favorLifes";
     return [self objectForKey:ra_user_geoPointKey];
 }
 
--(void)setFavorLifes:(BmobRelation *)favorLifes
-{
-    [self setObject:favorLifes forKey:ra_user_favorLifesKey];
-}
-
--(BmobRelation *)favorLifes
-{
-    return [self objectForKey:ra_user_favorLifesKey];
-}
-
--(void)setFavorMCs:(BmobRelation *)favorMCs
-{
-    [self setObject:favorMCs forKey:ra_user_favorMCsKey];
-}
-
--(BmobRelation *)favorMCs
-{
-    return [self objectForKey:ra_user_favorMCsKey];
-}
-
--(void)setFavorUsers:(BmobRelation *)favorUsers
-{
-    [self setObject:favorUsers forKey:ra_user_favorUsersKey];
-}
-
--(BmobRelation *)favorUsers
-{
-    return [self objectForKey:ra_user_favorUsersKey];
-}
+//-(void)setFavorLifes:(BmobRelation *)favorLifes
+//{
+//    [self setObject:favorLifes forKey:ra_user_favorLifesKey];
+//}
+//
+//-(BmobRelation *)favorLifes
+//{
+//    return [self objectForKey:ra_user_favorLifesKey];
+//}
+//
+//-(void)setFavorMCs:(BmobRelation *)favorMCs
+//{
+//    [self setObject:favorMCs forKey:ra_user_favorMCsKey];
+//}
+//
+//-(BmobRelation *)favorMCs
+//{
+//    return [self objectForKey:ra_user_favorMCsKey];
+//}
+//
+//-(void)setFavorUsers:(BmobRelation *)favorUsers
+//{
+//    [self setObject:favorUsers forKey:ra_user_favorUsersKey];
+//}
+//
+//-(BmobRelation *)favorUsers
+//{
+//    return [self objectForKey:ra_user_favorUsersKey];
+//}
 @end

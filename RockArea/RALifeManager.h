@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RALifeModel.h"
+#import "RALifeComment.h"
 
 /**
  *  生活管理
@@ -48,16 +49,30 @@
 +(void)sendImageLifeWithImages:(NSArray *)images text:(NSString *)text finishHandler:(FinishBoolHandler)handler;
 
 /**
+ *  删除生活
+ *
+ *  @param life 生活
+ */
++(void)deleteTheLife:(RALifeModel *)life;
+
+/**
  *
  *
  *  @param model 生活对象
  */
-+(void)admireTheLife:(RALifeModel *)model;
++(void)admireActionTheLife:(RALifeModel *)model;
 
 /**
  *  评论
  *
  *  @param model 生活model
  */
--(void)commentTheLife:(RALifeModel *)model text:(NSString *)comment;
++(void)commentTheLife:(RALifeModel *)model text:(NSString *)comment;
+
+/**
+ *  删除评论
+ *
+ *  @param comment 评论
+ */
++(void)deleteComment:(RALifeComment *)comment;
 @end

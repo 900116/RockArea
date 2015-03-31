@@ -61,16 +61,16 @@
 -(void)setGeoPoint:(BmobGeoPoint *)geoPoint;
 -(BmobGeoPoint *)geoPoint;
 
-//收藏的圈子
--(void)setFavorLifes:(BmobRelation *)favorLifes;
--(BmobRelation *)favorLifes;
-
-//收藏的乐评
--(void)setFavorMCs:(BmobRelation *)favorMCs;
--(BmobRelation *)favorMCs;
-
-//收藏的人
--(void)setFavorUsers:(BmobRelation *)favorUsers;
--(BmobRelation *)favorUsers;
+////收藏的圈子
+//-(void)setFavorLifes:(BmobRelation *)favorLifes;
+//-(BmobRelation *)favorLifes;
+//
+////收藏的乐评
+//-(void)setFavorMCs:(BmobRelation *)favorMCs;
+//-(BmobRelation *)favorMCs;
+//
+////收藏的人
+//-(void)setFavorUsers:(BmobRelation *)favorUsers;
+//-(BmobRelation *)favorUsers;
 @end
 typedef BmobUser RAUser;

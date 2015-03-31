@@ -15,20 +15,18 @@
 @end
 
 @implementation RABaseDataObject
+
 +(id)newObject
 {
     __autoreleasing RABaseDataObject *obj = [[self alloc]init];
+    obj->_obj = [BmobObject objectWithClassName:[self className]];
     return obj;
 }
 
--(void)setClassName:(NSString *)className
++(NSString *)className
 {
-    _obj = [BmobObject objectWithClassName:className];
-}
-
--(NSString *)className
-{
-    return _obj.className;
+    NSAssert(YES, @"方法必须被重写");
+    return nil;
 }
 
 -(void)saveInBackgroundWithResultBlock:(BmobBooleanResultBlock)block
@@ -39,6 +37,11 @@
 -(void)saveInBackground
 {
     [_obj saveInBackground];
+}
+
+-(void)deleteInBackground
+{
+    [_obj deleteInBackground];
 }
 
 +(instancetype)objectWithBombObj:(BmobObject *)bObj
@@ -112,5 +115,22 @@
 -(void)addRelation:(BmobRelation *)relation ForKey:(NSString *)key
 {
     [_obj addRelation:relation forKey:key];
+}
+
+-(BmobObject *)bObj
+{
+    return _obj;
+}
+
+-(void)updateInBackground
+{
+    [_obj updateInBackground];
+}
+
++(instancetype)objectWithObjectId:(NSString *)objectId
+{
+    RABaseDataObject *obj = [self newObject];
+    obj.objectId = objectId;
+    return obj;
 }
 @end

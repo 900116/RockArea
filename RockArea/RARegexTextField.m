@@ -43,7 +43,7 @@
     self.delegate = self;
     self.layer.borderWidth = 0.5;
     self.layer.borderColor = [UIColor blackColor].CGColor;
-    [RANotificationCenter addObserver:self selector:@selector(textChangeAction:) name:UITextFieldTextDidChangeNotification object:nil];
+    [RANotificationCenter() addObserver:self selector:@selector(textChangeAction:) name:UITextFieldTextDidChangeNotification object:nil];
 }
 
 
@@ -96,7 +96,8 @@
 
 -(void)removeFromSuperview
 {
-    [RANotificationCenter removeObserver:self name:UITextFieldTextDidChangeNotification object:nil];    [self.layer setBorderColor:[UIColor redColor].CGColor];
+    [RANotificationCenter() removeObserver:self name:UITextFieldTextDidChangeNotification object:nil];
+    [self.layer setBorderColor:[UIColor redColor].CGColor];
     [super removeFromSuperview];
 }
 @end
