@@ -9,6 +9,8 @@
 #import "RASeeViewController.h"
 #import "RAUserManager.h"
 #import "RALifeManager.h"
+#import "RA_XWDManager.h"
+#import "RA_XWDMapView.h"
 
 @interface RASeeViewController ()
 
@@ -19,11 +21,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        UIViewController *loginNavi = [sb instantiateViewControllerWithIdentifier:@"LoginNavi"];
-        [self presentVC:loginNavi];
-    });
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//        UIViewController *loginNavi = [sb instantiateViewControllerWithIdentifier:@"LoginNavi"];
+//        [self presentVC:loginNavi];
+//    });
+    [RA_XWDManager getInstance];
+    RA_XWDMapView *map = [[RA_XWDMapView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-108)];
+    [RA_XWDManager addCells:map];
+    [self.view addSubview:map];
 }
 
 - (IBAction)sendContent:(id)sender {
@@ -43,8 +49,10 @@
 //        }];
 //    }];
     
-    //发评论
-    [RALifeManager commentTheLife:[RALifeModel objectWithObjectId:@"XG3sYYYZ"] text:@"嘻嘻"];
+//    //发评论
+//    [RALifeManager commentTheLife:[RALifeModel objectWithObjectId:@"XG3sYYYZ"] text:@"嘻嘻"];
+    
+    //删除评论
     
    
 }

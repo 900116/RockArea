@@ -48,6 +48,9 @@
 		ECD1CC0B1AC4193500B6CCD6 /* UIViewController+Extense.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC0A1AC4193500B6CCD6 /* UIViewController+Extense.m */; };
 		ECD1CC101AC41CA500B6CCD6 /* RARegexTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC0F1AC41CA500B6CCD6 /* RARegexTextField.m */; };
 		ECD1CC131AC4F1B000B6CCD6 /* RALifeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ECD1CC121AC4F1B000B6CCD6 /* RALifeModel.m */; };
+		ECDB178D1ACD12360047F8C5 /* RA_XWDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB178C1ACD12360047F8C5 /* RA_XWDManager.m */; };
+		ECDB17901ACD20260047F8C5 /* RA_XWDMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB178F1ACD20260047F8C5 /* RA_XWDMapView.m */; };
+		ECDB17931ACD24BE0047F8C5 /* RA_XWDCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDB17921ACD24BE0047F8C5 /* RA_XWDCellView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,12 @@
 		ECD1CC0F1AC41CA500B6CCD6 /* RARegexTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RARegexTextField.m; sourceTree = "<group>"; };
 		ECD1CC111AC4F1B000B6CCD6 /* RALifeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALifeModel.h; sourceTree = "<group>"; };
 		ECD1CC121AC4F1B000B6CCD6 /* RALifeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALifeModel.m; sourceTree = "<group>"; };
+		ECDB178B1ACD12360047F8C5 /* RA_XWDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RA_XWDManager.h; sourceTree = "<group>"; };
+		ECDB178C1ACD12360047F8C5 /* RA_XWDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RA_XWDManager.m; sourceTree = "<group>"; };
+		ECDB178E1ACD20260047F8C5 /* RA_XWDMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RA_XWDMapView.h; sourceTree = "<group>"; };
+		ECDB178F1ACD20260047F8C5 /* RA_XWDMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RA_XWDMapView.m; sourceTree = "<group>"; };
+		ECDB17911ACD24BE0047F8C5 /* RA_XWDCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RA_XWDCellView.h; sourceTree = "<group>"; };
+		ECDB17921ACD24BE0047F8C5 /* RA_XWDCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RA_XWDCellView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +242,7 @@
 		ECD095471AC25CBE003F3180 /* RockArea */ = {
 			isa = PBXGroup;
 			children = (
+				ECDB178A1ACD120B0047F8C5 /* XWDGame */,
 				ECCF1BC91AC90FDA00C72306 /* Util */,
 				ECD095881AC2A16B003F3180 /* Lib */,
 				ECD095831AC29F62003F3180 /* Data */,
@@ -437,6 +447,19 @@
 			name = RARegexTextField;
 			sourceTree = "<group>";
 		};
+		ECDB178A1ACD120B0047F8C5 /* XWDGame */ = {
+			isa = PBXGroup;
+			children = (
+				ECDB178B1ACD12360047F8C5 /* RA_XWDManager.h */,
+				ECDB178C1ACD12360047F8C5 /* RA_XWDManager.m */,
+				ECDB178E1ACD20260047F8C5 /* RA_XWDMapView.h */,
+				ECDB178F1ACD20260047F8C5 /* RA_XWDMapView.m */,
+				ECDB17911ACD24BE0047F8C5 /* RA_XWDCellView.h */,
+				ECDB17921ACD24BE0047F8C5 /* RA_XWDCellView.m */,
+			);
+			name = XWDGame;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -573,12 +596,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECDB17901ACD20260047F8C5 /* RA_XWDMapView.m in Sources */,
 				ECD1CC071AC416F800B6CCD6 /* RALoginViewController.m in Sources */,
 				ECD1CBFB1AC3A3EA00B6CCD6 /* BmobObject+BaseType.m in Sources */,
 				ECD0958D1AC2A1AF003F3180 /* RADataConfig.m in Sources */,
 				ECD095C21AC2C563003F3180 /* BmobUser+RAUser.m in Sources */,
+				ECDB178D1ACD12360047F8C5 /* RA_XWDManager.m in Sources */,
 				ECD0954E1AC25CBE003F3180 /* AppDelegate.m in Sources */,
 				ECD095781AC26E9F003F3180 /* RAMyViewController.m in Sources */,
+				ECDB17931ACD24BE0047F8C5 /* RA_XWDCellView.m in Sources */,
 				ECD0957E1AC26EBF003F3180 /* RAListenViewController.m in Sources */,
 				ECD0954B1AC25CBE003F3180 /* main.m in Sources */,
 				ECD095511AC25CBE003F3180 /* RockArea.xcdatamodeld in Sources */,

@@ -8,6 +8,7 @@
 
 #import "RALoginViewController.h"
 #import "RAUserManager.h"
+#import "RA_XWDMapView.h"
 
 @interface RALoginViewController ()
 
